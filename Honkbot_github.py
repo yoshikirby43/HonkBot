@@ -42,18 +42,7 @@ async def yt(ctx, url):
     await client.say("Now Playing")
     print("Now Playing")
     await client.join_voice_channel(voice_channel).disconnect()
-
-
-    @client.command(name='about',
-                description="About HonkBot",
-                brief="'about','info'",
-                aliases=['aboutme','purpose','about],
-                pass_context=True)
-    async def eight_ball(context):
-          possible_responses = [
-        'I was created by Yoshi#6057 in Discord.py for fun. Yoshi has plans for me.',   
-    ]
-    await client.say(random.choice(possible_responses))
+    
 
 @client.event
 async def on_ready():
