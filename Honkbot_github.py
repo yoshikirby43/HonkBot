@@ -1,5 +1,5 @@
 # Made for Python 3.6
-#This is the github version so may not include updated commands when they are added to HonkBot
+#This is the github version so may not include updated commands right as they  are added to HonkBot once tested and confirmed to work properly will be added to github version
 import random
 import asyncio
 import aiohttp
@@ -30,26 +30,13 @@ async def eight_ball(context):
     await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
 
-@client.command(pass_context=True)
-async def yt(ctx, url):
 
-    author = ctx.message.author
-    voice_channel = author.voice_channel
-    vc = await client.join_voice_channel(voice_channel)
-
-    player = await vc.create_ytdl_player(url)
-    player.start()
-    await client.join_voice_channel(voice_channel)
-    await client.say("Now Playing")
-    print("Now Playing")
-    await client.join_voice_channel(voice_channel).disconnect()
     
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=Game(name="sagoi"))
+    await client.change_presence(game=Game(name="GAMENAME HERE"))
     print("Logged in as " + client.user.name)
-
 
 
 
