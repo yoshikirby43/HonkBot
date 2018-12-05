@@ -1,4 +1,5 @@
 # Made for Python 3.6
+#This is the github version so may not include updated commands when they are added to HonkBot
 import random
 import asyncio
 import aiohttp
