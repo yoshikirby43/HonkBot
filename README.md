@@ -6,4 +6,4 @@ Is still a work in progress.
 
 This is the github version so may not include updated commands right as they  are added to HonkBot once tested and confirmed to work properly will be added to github version
 
-My Disocord tag is as follows Yoshi#6057.
+My Discord tag is as follows Yoshi#6057.
