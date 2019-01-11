@@ -29,7 +29,16 @@ async def eight_ball(context):
     ]
     await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
-
+@client.command(name='test',
+                description="Answers a yes/no question.",
+                brief="Answers from the beyond.",
+                aliases=['test'],
+                pass_context=True)
+async def test(context):
+    possible_responses = [
+        'The Bot is working.'
+    ]
+    await client.say(random.choice(possible_responses)
 
     
 
