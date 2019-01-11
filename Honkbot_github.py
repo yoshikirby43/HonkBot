@@ -46,7 +46,7 @@ async def test(context):
 async def on_ready():
     await client.change_presence(game=Game(name="GAMENAME HERE"))
     print("Logged in as " + client.user.name)
-
+    print("Using Discord.py" + discord.version_info) 
 
 
 
